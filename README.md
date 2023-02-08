@@ -45,3 +45,10 @@ Principles utilized:
 - Observables and subscriptions
 - Angular router
 - Shared data
+
+## Mockups created before app was developed
+
+![1](https://user-images.githubusercontent.com/16374433/217610382-dcd7b838-5e22-4138-9111-638a472adb7b.png)
+![2](https://user-images.githubusercontent.com/16374433/217610399-e69aac38-4aa3-44bf-a66b-5306415eee4a.png)
+![3](https://user-images.githubusercontent.com/16374433/217610406-07b23c4c-94fe-45dd-bbba-762534916e05.png)
+
