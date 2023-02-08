@@ -1,0 +1,19 @@
+<div class="component-list">
+  <h2>Added Components:</h2>
+  <ul>
+    <li
+      *ngFor="let addedComponent of data"
+      (click)="showDetailView(addedComponent, true)"
+    >
+      {{ addedComponent.title }} ({{ addedComponent.code }})
+    </li>
+  </ul>
+  <div class="component-list__button-group">
+    <button class="component-list__add-component" (click)="addComponent()">
+      Component picker (add new)
+    </button>
+    <button class="component-list__add-component" (click)="closeDetailView()">
+      Close Detail View
+    </button>
+  </div>
+</div>

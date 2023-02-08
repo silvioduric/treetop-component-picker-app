@@ -1,0 +1,8 @@
+<ng-container *ngIf="showDetailView">
+  <div class="component-detail-view">
+    <h2>{{ title }}</h2>
+    <p>{{ code }}</p>
+    <p>{{ description }}</p>
+    <button *ngIf="addComponetbutton" (click)="addComponent(data)">Add Component</button>
+  </div>
+</ng-container>

@@ -1,0 +1,16 @@
+<ng-container *ngIf="showSecondComponent">
+  <div class="component-picker">
+    <h2>Component Picker</h2>
+    <ul>
+      <li
+        *ngFor="let component of data"
+        (click)="showDetailView(component, true, true)"
+      >
+        {{ component.title }} ({{ component.code }})
+      </li>
+    </ul>
+    <button class="component-picker__add-component" (click)="closeDetailView()">
+      Close Detail View
+    </button>
+  </div>
+</ng-container>

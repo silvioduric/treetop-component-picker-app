@@ -1,0 +1,19 @@
+.component-detail-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 50px;
+
+  h2,
+  p {
+    background-color: #c9e265;
+    padding: 10px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-bottom: 20px;
+    width: 400px;
+    text-align: center;
+  }
+}
