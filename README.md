@@ -56,9 +56,16 @@ Principles utilized:
 
 # Challange 2
 
-- Question: How would you display the error message to the user? (Consider rules can have multiple lines)
+- Question: 
+- How would you display the error message to the user? (Consider rules can have multiple lines)
 
-- Answer: I would create a toast message problably using plain JavaScript which takes into considiration the error given and the erorr message returned from backend side. Message would be shown on the top right side of the screen and would be closable on X in the message bubble. I have designed rough example of such message:
+- Answer: 
+
+- I would create a toast message which takes into considiration the error given and the erorr message returned from backend side. To show the rule or rules (as it is mentioned that rules can have multiple lines) I would use a placeholder to whom I would pass pass rule/rules that created the error. 
+
+- In case multiple line rule I would break it to multiple lines and extend the message bubble. In case its not user friendly (5 or more lines) I would use concatenation (...) and on user hover over the message show the full message. 
+
+- Message would be shown on the top right side of the screen and would be closable on X in the message bubble. I have designed rough example of such message:
 
 ![Toast_message](https://user-images.githubusercontent.com/16374433/217613555-a162252e-bcb3-4a96-ba05-4c9f1aa7a5e1.png)
 
