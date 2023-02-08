@@ -22,6 +22,26 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
+## App Solution Structure
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+App was developed and structured in three main components:
+
+- Component list (overview)
+- Component picker (adding new components to component list)
+- Component detail view (displaing detail view for both component list and component picker)
+
+Shared services that components use are placed in folder `ng e2e` services and contain:
+
+- Data services (contain shared data of all components and added components)
+- Shared services (methods for toggling the component picker component and closing the detail view component)
+
+## Utilized Principles
+
+App could have been developed in just one component and with more simplified structure but to be able to demonstrate following principles it is structured in this way.
+
+Principles utilized:
+
+- Shared services
+- Observables and subscriptions
+- Angular router
+- Shared data
