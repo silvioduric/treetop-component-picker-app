@@ -52,8 +52,6 @@ Principles utilized:
 - Angular router
 - Shared data
 
-## Utilized Principles
-
 ## Mockups created before app was developed
 
 ![1](https://user-images.githubusercontent.com/16374433/217610382-dcd7b838-5e22-4138-9111-638a472adb7b.png)
