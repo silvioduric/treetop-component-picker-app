@@ -46,9 +46,19 @@ Principles utilized:
 - Angular router
 - Shared data
 
+## Utilized Principles
+
 ## Mockups created before app was developed
 
 ![1](https://user-images.githubusercontent.com/16374433/217610382-dcd7b838-5e22-4138-9111-638a472adb7b.png)
 ![2](https://user-images.githubusercontent.com/16374433/217610399-e69aac38-4aa3-44bf-a66b-5306415eee4a.png)
 ![3](https://user-images.githubusercontent.com/16374433/217610406-07b23c4c-94fe-45dd-bbba-762534916e05.png)
+
+# Challange 2
+
+- Question: How would you display the error message to the user? (Consider rules can have multiple lines)
+
+- Answer: I would create a toast message problably using plain JavaScript which takes into considiration the error given and the erorr message returned from backend side. Message would be shown on the top right side of the screen and would be closable on X in the message bubble. I have designed rough example of such message:
+
+![Toast_message](https://user-images.githubusercontent.com/16374433/217613555-a162252e-bcb3-4a96-ba05-4c9f1aa7a5e1.png)
 
