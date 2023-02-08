@@ -1,23 +1,32 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { ComponentDetailViewComponent } from './component-detail-view.component';
+import { ActivatedRoute, convertToParamMap } from '@angular/router';
+import { DataService } from '../services/data.service';
+import { of } from 'rxjs';
 
 describe('ComponentDetailViewComponent', () => {
   let component: ComponentDetailViewComponent;
-  let fixture: ComponentFixture<ComponentDetailViewComponent>;
+  let dataService: DataService;
+  let route: ActivatedRoute;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      declarations: [ ComponentDetailViewComponent ]
-    })
-    .compileComponents();
-
-    fixture = TestBed.createComponent(ComponentDetailViewComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
+  beforeEach(() => {
+    dataService = new DataService();
+    route = {
+      queryParams: of({
+        title: 'title',
+        code: 'code',
+        description: 'description',
+      }),
+    } as any;
+    component = new ComponentDetailViewComponent(route, dataService);
   });
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should call dataService.addNewComponent() when addComponent() is called', () => {
+    spyOn(dataService, 'addNewComponent');
+    component.addComponent({});
+    expect(dataService.addNewComponent).toHaveBeenCalled();
   });
 });
