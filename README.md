@@ -2,6 +2,12 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.4.
 
+## Installation of the App
+
+You can get the app by running `git clone https://github.com/silvioduric/treetop-component-picker-app.git` or `git clone git@github.com:silvioduric/treetop-component-picker-app.git` or by downloading the ZIP version.
+
+To run the app it is needed to first run `npm install`, `ng build` and `ng serve` in the end. In the following text I have generated and writen details about mentioned commands.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
